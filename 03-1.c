@@ -8,3 +8,4 @@ int main() {
    printf("num1 * num2 = %d",num1 * num2);
    return 0;
 }
+*/
