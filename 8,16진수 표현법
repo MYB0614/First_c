@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1 = 7 , num2 = 13;
+    
+    printf("10진수(7) : %d , 8진수(7) : %#o\n",num1,num1);
+    printf("10진수(13) : %d , 16진수(13) : %#x",num2,num2);
+    
+    return 0;
+        
+
+}
