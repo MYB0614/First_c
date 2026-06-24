@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    /*
+    산술연산에서의 형 변환 규칙 (정수 => 실수 순)
+    ㄴ> int -> long -> long long -> float -> double ->long double 
+    
+    
+    int num1 =3, num2 = 4;
+    double div_Result;
+    div_Result = num1/num2; ====> 여기서 (int)3/(int)4 이기 때문에 0 => 0.00000 으로 나옴
+    printf("나눗셈 결과는 : %f",div_Result);
+    */
+    int num1 =3, num2 = 4;
+    double div_Result;
+    div_Result = (double)num1/num2; // 명시적 형변환 ~~!
+    printf("나눗셈 결과는 : %f",div_Result);
+     
+    return 0;
+        
+
+}
