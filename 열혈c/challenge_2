@@ -1,6 +1,8 @@
 #include <stdio.h>
 #define SIZE 10
 
+
+
 // 1.c
 void odd(int *ptr){
     printf("홀수출력 : ");
