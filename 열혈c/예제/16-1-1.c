@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+
+
+int main(void){
+    int arr[3][9] = {0};
+    
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 9; j++){
+            arr[i][j] = (i+2)*(j+1);
+        }
+    }
+    
+    for (int i = 0 ; i < 3; i++){
+        for(int j = 0 ; j < 9; j++){
+            printf("arr[%d][%d] = %d\n", i, j, arr[i][j]);
+        }
+        printf("----------------");
+    }
+    
+    return 0;
+}
