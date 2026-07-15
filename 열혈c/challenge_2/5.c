@@ -1,8 +1,22 @@
 
 #include <stdio.h>
 #define SIZE 5
+//void BubbleSort_func(int ptr[]){
+//     for (int i = 0 ; i <SIZE-1; i++){
+//         for(int j = 0 ; j < SIZE -1 - i; j++){
+//             int temp = ptr[j];
+//             if(temp < ptr[j+1]){     //내림차순 정렬
+//                 *(ptr+j) = *(ptr+j+1);  // n번째 <-> n+1번째 swqp (An > An+1)
+//                 *(ptr+j+1) = temp;
+//             }
+//         }
+//     }
+//     for(int i = 0; i < SIZE; i++){
+//         printf("배열 %d번째 값 : %d\n",i+1,*(ptr+i));
+//     }
+// }
 void BubbleSort_func(int *ptr){
-    for (int i = 0 ; i <SIZE-1; i++){
+    for (int i = 0 ; i <SIZE-1; i++){    //오름차순 정렬
         for(int j = 0 ; j < SIZE -1 - i; j++){
             int temp = *(ptr + j);
             if(temp > *(ptr+j+1)){
